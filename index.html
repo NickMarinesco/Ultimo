@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Carrito compras</title>
+</head>
+<body>
+  <div id="app">
+    <div class="login-container">
+        <span class="title">Iniciar sesión</span>
+        <label for="">
+            <span class="label">Usuario</span>
+            <input type="text" name="usuario" placeholder="Escriba su usuario">
+        </label>
+        <label>
+            <span class="label">Contraseña</span>
+            <input type="password" name="contraseña" placeholder="Escriba contraseña">
+        </label>
+        </label>
+        <button id="login-button">Iniciar sesión</button>
+    </div>
+</div>
+
+    <h1>Artículos</h1>
+
+    <div class="container">
+      <div class="item">
+        <h2>AMD Ryzen 9 7900</h2>
+        <img src="./Img/Micro.png" alt="Imagen del artículo 1">
+        <p> Procesador AMD Ryzen 9 7900 de 12 núcleos y  5.4GHz de frecuencia con gráfica integrada.</p>
+        <p>Precio: $147.610</p>
+        <button onclick="agregarAlCarrito('Artículo 1', 147.610)">Agregar al carrito</button>
+      </div>
+  
+      <div class="item">
+        <h2>RAM Corsair</h2>
+        <img src="./Img/Memorias.jpg" alt="Imagen del artículo 2">
+        <p>Memoria RAM gamer color gris 32GB 2 Corsair.</p>
+        <p>Precio: $168.754</p>
+        <button onclick="agregarAlCarrito('Artículo 2', 168.754)">Agregar al carrito</button>
+      </div>
+  
+      <div class="item">
+        <h2>Gigabyte X570 Aorus Pro Wifi</h2>
+        <img src="./Img/Mother.jpg" alt="Imagen del artículo 3">
+        <p>Gigabyte X570 Aorus Pro Wifi (amd Ryzen 3000/x570/atx/pci).</p>
+        <p>Precio: $195.000</p>
+        <button onclick="agregarAlCarrito('Artículo 3', 195.000)">Agregar al carrito</button>
+      </div>
+  
+      <div class="item">
+        <h2>RTX 4090 FE</h2>
+        <img src="./Img/rtx 4090.jpg" alt="Imagen del artículo 4">
+        <p>NVIDIA Geforce RTX 4090 Founders Edition.</p>
+        <p>Precio: $998.786</p>
+        <button onclick="agregarAlCarrito('Artículo 4', 398.786)">Agregar al carrito</button>
+      </div>
+    </div>
+  
+    <div id="carrito">
+      <h2>Carrito de compras</h2>
+      <ul id="carrito-lista"></ul>
+      <p id="carrito-total">Total: $0.00</p>
+      <div class="opciones">
+        <button onclick="comprar()">Comprar</button>
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+      </div>
+ 
+  
+
+  <script src="./index.js"></script>
+</body>
+</html>
